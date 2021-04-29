@@ -23,7 +23,9 @@ Cada uno de los paquetes de Julia se instalan desde el REPL de Julia (en cualqui
 * Pkg.resolve(): *Actualiza el grafo de dependencias declarado en los archivos adicionales mencionados.*
 * Pkg.instantiate(): *Instala las dependencias necesarias para correr el proyecto.*
 
-Para que los pasos anteriores realicen la función deseada, se debe asegurar que el REPL de Julia corra desde el directorio de trabajo donde se encuentran los archivos "Manifest.toml" y "Project.toml".
+Para que los pasos anteriores realicen la función deseada, se debe asegurar que el REPL de Julia corra desde el directorio de trabajo donde se encuentran los archivos "Manifest.toml" y "Project.toml". 
+
+Con las dependencias instaladas y el entorno virtual activado, desde el REPL se abre el notebook de Pluto con los comandos: "using Pluto; Pluto.run()".
 
 ## Referencias
 * Lelieveld, J., Helleis, F., Borrmann, S., Cheng, Y., Drewnick, F., Haug, G., ... & Pöschl, U. (2020). Model Calculations of Aerosol Transmission and Infection Risk of COVID-19 in Indoor Environments. International Journal of Environmental Research and Public Health, 17(21), 8114.

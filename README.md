@@ -17,17 +17,20 @@ Para correr la simulación, en el archivo "covid19_agents_model_base.jl", se nec
   - Agents
   - DrWatson
 
+
 Cada uno de los paquetes de Julia se instalan desde el REPL de Julia (en cualquiera de los sistemas operativos), utilizando los siguientes comandos:
 * using Pkg: 
 * Pkg.activate("."): 
 * Pkg.resolve(): 
 * Pkg.instantiate(): 
-* 
+
+
 En orden las líneas anteriores realizan las siguientes acciones:
 * Manejador de paquetes de Julia.
 * Esta línea de comando activa un ambiente virtual en la carpeta donde se encuentra el archivo mencionado, en este caso la carpeta que constituye este repositorio, que además contiene los archivos "Manifest.toml" y "Project.toml".
 * Actualiza el grafo de dependencias declarado en los archivos adicionales mencionados.
 * Instala las dependencias necesarias para correr el proyecto.
+
 
 Para que los pasos anteriores realicen la función deseada, se debe asegurar que el REPL de Julia corra desde el directorio de trabajo donde se encuentran los archivos "Manifest.toml" y "Project.toml". Con las dependencias instaladas y el entorno virtual activado, desde el REPL se abre el notebook de Pluto con los comandos: 
 * using Pluto; Pluto.run()
@@ -38,9 +41,24 @@ Para que los pasos anteriores realicen la función deseada, se debe asegurar que
 #### Variables de salida
 
 ### Modelo SIR - Basado en agentes
-Esta parte del proyecto constituye la parte visual de la simulación donde se puede observar cómo se propaga el virus que causa el COVID-19 entre las personas que se encuentran en un ambiente cerrado. A continuación, se describen las variables que constituyen la entrada para la simulación visual y cómo se relaciona con la calculadora de probabilidad.
+Esta parte del proyecto constituye la parte visual de la simulación donde se puede observar cómo se propaga el virus que causa el COVID-19 entre las personas que se encuentran en un ambiente cerrado. A continuación, se describen las variables que constituyen la entrada para la simulación visual y cómo se relaciona con la calculadora de probabilidad, cualquier cambio en estas últimas variables constituye un cambio automático en la simulación reconstruyéndose visualmente la simulación.
 #### Variables de entrada
+##### Cantidad de personas en el cuarto
+Determina la cantidad de agentes presentes en la simulación. Esta variable está definida con la calculadora de probabilidades. 
+##### Duración del evento
+Determina la cantidad de pasos que deben ser considerados en la simulación. Esta variable está definida con la calculadora de probabilidades y se declara en horas. Para la simulación cada paso dado constituye un minuto, por lo que se transforma esta variable multiplicando por el factor de 60.
+##### Riesgo que una persona en el escenario se infecte
+Determina la probabilidad que un agente dentro de la simulación salga infectado luego de una interacción dentro del ambiente cerrado. Esta variable está definida con la calculadora de probabilidades.
+#####  Cantidad de personas infectadas inicialmente
+Determina la cantidad de personas que se encuentran infectadas desde el inicio de la simulación. Para efecto del simulador esta variable siempre debe ser distinto de cero y menor que la cantidad de personas total en el ambiente cerrado, esta variable está definida para tener un valor dentro del rango de 1 a 4. 
+##### Distancia de interacción mínima segura
+Determina cuál es la distancia mínima permitida que asegura una interacción entre los agentes con probabilidad de transmisión. Esta variable puede tomar los valores 0.5, 1.0, 1.5 y 2.0 
+
 #### Visualización del simulador
+* La interacción entre los agentes dentro del ambiente cerrado se visualiza en un gráfico, los agentes infectados se representan con un hexágono de color rojo y las personas suceptibles con un círculo de color gris. 
+* El espacio de interacción queda definido en un área determinada por el tipo de escenario elegido en calculadora de probabilidades. 
+* La cantidad de personas infectadas y suceptibles se visualiza en la leyenda del gráfico.
+* El simulador presenta un botón para dar inicio al simulador y con el mismo botón el simulador puede detenerse. Justo debajo del botón la cantidad de tiempo transcurrido puede observarse en minutos.
 
 ## Referencias
 * Lelieveld, J., Helleis, F., Borrmann, S., Cheng, Y., Drewnick, F., Haug, G., ... & Pöschl, U. (2020). Model Calculations of Aerosol Transmission and Infection Risk of COVID-19 in Indoor Environments. International Journal of Environmental Research and Public Health, 17(21), 8114.

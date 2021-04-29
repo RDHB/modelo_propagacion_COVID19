@@ -17,6 +17,12 @@ Para correr la simulación, en el archivo "covid19_agents_model_base.jl", se nec
   - Agents
   - DrWatson
 
+Cada uno de los paquetes de Julia se instalan desde el REPL de Julia (en cualquiera de los sistemas operativos), utilizando los siguientes comandos:
+* using Pkg
+* Pkg.activate("."). Esta línea de comando activa un ambiente virtual en la carpeta donde se encuentra el archivo mencionado, en este caso la carpeta que constituye este repositorio, que además contiene los archivos "Manifest.toml" y "Project.toml".
+* Pkg.resolve(). Actualiza el grafo de dependencias declarado en los archivos adicionales mencionados.
+* Pkg.instantiate(). Instala las dependencias necesarias para correr el proyecto.
+
 ## Referencias
 * Lelieveld, J., Helleis, F., Borrmann, S., Cheng, Y., Drewnick, F., Haug, G., ... & Pöschl, U. (2020). Model Calculations of Aerosol Transmission and Infection Risk of COVID-19 in Indoor Environments. International Journal of Environmental Research and Public Health, 17(21), 8114.
 * Vahdati, A. R. (2019). Agents. jl: agent-based modeling framework in Julia. Journal of Open Source Software, 4(42), 1611.

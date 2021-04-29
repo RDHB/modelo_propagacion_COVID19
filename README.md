@@ -9,8 +9,13 @@ Información más detallada referente a lo mencionado en esta sección se descri
 
 ## Requerimientos
 Para correr la simulación, en el archivo "covid19_agents_model_base.jl", se necesita instalar en la computadora las siguientes dependencias:
-* Lenguaje de programación Julia, verión 1.5 o superior.
+* Lenguaje de programación Julia, verión 1.4 o superior.
 * Instalación de los siguientes paquetes de Julia:
+  - PlutoUI
+  - Random 
+  - Plots
+  - Agents
+  - DrWatson
 
 ## Referencias
 * Lelieveld, J., Helleis, F., Borrmann, S., Cheng, Y., Drewnick, F., Haug, G., ... & Pöschl, U. (2020). Model Calculations of Aerosol Transmission and Infection Risk of COVID-19 in Indoor Environments. International Journal of Environmental Research and Public Health, 17(21), 8114.

@@ -52,7 +52,7 @@ Determina la probabilidad que un agente dentro de la simulación salga infectado
 #####  Cantidad de personas infectadas inicialmente
 Determina la cantidad de personas que se encuentran infectadas desde el inicio de la simulación. Para efecto del simulador esta variable siempre debe ser distinto de cero y menor que la cantidad de personas total en el ambiente cerrado, esta variable está definida para tener un valor dentro del rango de 1 a 4. 
 ##### Distancia de interacción mínima segura
-Determina cuál es la distancia mínima permitida que asegura una interacción entre los agentes con probabilidad de transmisión. Esta variable puede tomar los valores 0.5, 1.0, 1.5 y 2.0 
+Determina cuál es la distancia mínima permitida que asegura una interacción entre los agentes con probabilidad de transmisión. Esta variable puede tomar los valores 0.5, 1.0, 1.5 y 2.0 (en metros).
 
 #### Visualización del simulador
 * La interacción entre los agentes dentro del ambiente cerrado se visualiza en un gráfico, los agentes infectados se representan con un hexágono de color rojo y las personas suceptibles con un círculo de color gris. 

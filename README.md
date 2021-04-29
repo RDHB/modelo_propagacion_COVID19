@@ -29,18 +29,18 @@ En orden las líneas anteriores realizan las siguientes acciones:
 * Actualiza el grafo de dependencias declarado en los archivos adicionales mencionados.
 * Instala las dependencias necesarias para correr el proyecto.
 
-Para que los pasos anteriores realicen la función deseada, se debe asegurar que el REPL de Julia corra desde el directorio de trabajo donde se encuentran los archivos "Manifest.toml" y "Project.toml". 
-
-Con las dependencias instaladas y el entorno virtual activado, desde el REPL se abre el notebook de Pluto con los comandos: 
+Para que los pasos anteriores realicen la función deseada, se debe asegurar que el REPL de Julia corra desde el directorio de trabajo donde se encuentran los archivos "Manifest.toml" y "Project.toml". Con las dependencias instaladas y el entorno virtual activado, desde el REPL se abre el notebook de Pluto con los comandos: 
 * using Pluto; Pluto.run()
 
 ## Manejo del simulador
 ### Calculadora de probabilidad de contagio de COVID-19
-##### Variables de entrada
-##### Variables de salida
+#### Variables de entrada
+#### Variables de salida
+
 ### Modelo SIR - Basado en agentes
-##### Variables de entrada
-##### Visualización del simulador
+Esta parte del proyecto constituye la parte visual de la simulación donde se puede observar cómo se propaga el virus que causa el COVID-19 entre las personas que se encuentran en un ambiente cerrado. A continuación, se describen las variables que constituyen la entrada para la simulación visual y cómo se relaciona con la calculadora de probabilidad.
+#### Variables de entrada
+#### Visualización del simulador
 
 ## Referencias
 * Lelieveld, J., Helleis, F., Borrmann, S., Cheng, Y., Drewnick, F., Haug, G., ... & Pöschl, U. (2020). Model Calculations of Aerosol Transmission and Infection Risk of COVID-19 in Indoor Environments. International Journal of Environmental Research and Public Health, 17(21), 8114.

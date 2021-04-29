@@ -19,10 +19,10 @@ Para correr la simulación, en el archivo "covid19_agents_model_base.jl", se nec
 
 
 Cada uno de los paquetes de Julia se instalan desde el REPL de Julia (en cualquiera de los sistemas operativos), utilizando los siguientes comandos:
-* using Pkg: 
-* Pkg.activate("."): 
-* Pkg.resolve(): 
-* Pkg.instantiate(): 
+* using Pkg
+* Pkg.activate(".")
+* Pkg.resolve()
+* Pkg.instantiate()
 
 
 En orden las líneas anteriores realizan las siguientes acciones:

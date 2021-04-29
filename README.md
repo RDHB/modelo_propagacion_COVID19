@@ -18,10 +18,16 @@ Para correr la simulación, en el archivo "covid19_agents_model_base.jl", se nec
   - DrWatson
 
 Cada uno de los paquetes de Julia se instalan desde el REPL de Julia (en cualquiera de los sistemas operativos), utilizando los siguientes comandos:
-* using Pkg: *Manejador de paquetes de Julia*
-* Pkg.activate("."): *Esta línea de comando activa un ambiente virtual en la carpeta donde se encuentra el archivo mencionado, en este caso la carpeta que constituye este repositorio, que además contiene los archivos "Manifest.toml" y "Project.toml".*
-* Pkg.resolve(): *Actualiza el grafo de dependencias declarado en los archivos adicionales mencionados.*
-* Pkg.instantiate(): *Instala las dependencias necesarias para correr el proyecto.*
+* using Pkg: 
+* Pkg.activate("."): 
+* Pkg.resolve(): 
+* Pkg.instantiate(): 
+* 
+En orden las líneas anteriores realizan las siguientes acciones:
+* Manejador de paquetes de Julia.
+* Esta línea de comando activa un ambiente virtual en la carpeta donde se encuentra el archivo mencionado, en este caso la carpeta que constituye este repositorio, que además contiene los archivos "Manifest.toml" y "Project.toml".
+* Actualiza el grafo de dependencias declarado en los archivos adicionales mencionados.
+* Instala las dependencias necesarias para correr el proyecto.
 
 Para que los pasos anteriores realicen la función deseada, se debe asegurar que el REPL de Julia corra desde el directorio de trabajo donde se encuentran los archivos "Manifest.toml" y "Project.toml". 
 

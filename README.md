@@ -38,7 +38,69 @@ Para que los pasos anteriores realicen la función deseada, se debe asegurar que
 ## Manejo del simulador
 ### Calculadora de probabilidad de contagio de COVID-19
 #### Variables de entrada
+ A continuación, se describen las variables que constituyen la entrada para la simulación de la Calculadora de Probabilidad de contagio de COVID-19.
+
+#### Escenario
+Se evaluaron entornos interiores típicos,  una habitación, un aula, y un bar/restaurante. Tomando en consderación que la habitación tendrá un área de 40 m^2 y 3 m de altura, por lo cual su volumen será de 40x3 m^3. En el caso de un aula de clases su área sera 60 m^2 y su altura de 3 m, y el volumen sera de 60X3 m^3 y finalmente el área del bar/restaurante es de 100 m^2, con una altura de 4 m, teniendo así 100x4 m^3.
+
+#### Tipo de Mascarilla
+Se consideraron 2 tipos de mascarilla de los cuales obtenemos su eficiencia para realizar calculos posteriores. El primer tipo de mascarilla es la mascarilla quirúrgica la cual tiene una eficiencia de 0.65 para el momento en que la persona exhala al respirar o hablar y de 0.3  para el momento en que la persona inhala. Sumando estos dos valores obtenemos un resultado total de  eficiencia de 0.95. El segundo tipo de mascarilla es la de tela la cual tiene una eficiencia de 0.5  para el momento en que la persona exhala al respirar o hablar y de 0.2 para el momento en que la  persona inhala. Sumando estos dos valores obtenemos un resultado total de eficiencia de 0.7.
+
+#### Ventilación
+Se consideraron 2 tipos de ventilación de los cuales obtenemos el valor para la tasa de ventilación del escenario. Para cada uno de los tipo se estableció un rango de valores, al escoger  la opción deseada, el valor de la tasa de ventilación se obtendrá de manera aleatoria respetando los valores mínimos y máximos de dichos rangos. El primer tipo es la ventilación baja con un rango de [1,3] para el valor de la tasa. El segundo tipo es la ventilación alta con un rango de [4,9] para el valor de la tasa.
+
+#### Cantidad de personas
+Para la cantidad de personas que se encuentran en el escenario se consideró un valor mínimo de 5 personas y máximo de 25 personas.
+
+#### Duración del evento 
+Para esta variable se consideró un mínimo de 1 hora y un máximo de 12 horas en las cuales las personas estarán reunidas en el escenario.
+
+#### Variables de estado
+
+#### D50
+Utilizada para el cálculo del riesgo de infección de copia de ARN viral. 
+
+### Carga viralmente infecciosa y el diametro de aerosol humedo. 
+Se utilizan para obtener la cantidad de ARN viral que existe en el aerosol 
+
+#### Concentración por respirar, Concentracíon de N° de partículas para hablar, Concentracíon de N° de partículas para respirar, Frecuencia respiratoria 
+Son utilizadas para el cálculo de la cantidad de emisión de aerosoles de una persona. 
+
+#### Probabilidad de deposición en los pulmones 
+Es utilizada para el cálculo de dosis de ARN para una hora. 
+
+#### Vida útil del virus en areosol 
+Se utiliza para obtener la dosis de ARN en un tiempo específico. 
+
+#### Episodio infeccioso 
+Determina el periodo de dos días que representa el de mayor infecciosidad del sujeto.
+
 #### Variables de salida
+
+#### Probabilidad de Infección 
+Determina el riesgo de infección de una sola copia de ARN viral.
+
+#### Contenido de ARN en aerosol
+Determina la  cantidad de  ARN viral que existe en el aerosol. 
+
+#### Emision de aerosoles
+Determina la cantidad de emisión de aerosoles de una persona. 
+
+#### Concentracion de aerosoles
+Determina cuanta cantidad de emisión de aerosoles de una persona se encuentra en un escenario especifico. 
+
+#### ARN concentrado en aerosol
+Determina cantidad de ARN viral en la concentración de aerosoles. 
+
+Dosis de ARN por hora: 5.595961914206819
+
+Dosis de ARN por tiempo de duración del evento: 0.9357182217198295
+
+Dosis de ARN por un episodio infeccioso: 1.871436443439659
+
+Riesgo de infección de una persona en el escenario : 0.4096588823269576
+
+Riesgo que una persona en el escenario se infecte: 9.753472932034912
 
 ### Modelo SIR - Basado en agentes
 Esta parte del proyecto constituye la parte visual de la simulación donde se puede observar cómo se propaga el virus que causa el COVID-19 entre las personas que se encuentran en un ambiente cerrado. A continuación, se describen las variables que constituyen la entrada para la simulación visual y cómo se relaciona con la calculadora de probabilidad, cualquier cambio en estas últimas variables constituye un cambio automático en la simulación reconstruyéndose visualmente la simulación.

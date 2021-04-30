@@ -42,7 +42,13 @@ Para que los pasos anteriores realicen la función deseada, se debe asegurar que
 
 Variable | Descripción
 ---------  ------------
-Escenario| Se evaluan interiores típicos: una habitación, un aula, y un bar/restaurante. Tomando en consderación que la habitación tendrá un área de 40 m^2 y 3 m de altura, por lo cual su volumen será de 40x3 m^3. En el caso de un aula de clases su área sera 60 m^2 y su altura de 3 m, y el volumen sera de 60X3 m^3 y finalmente el área del bar/restaurante es de 100 m^2, con una altura de 4 m, teniendo así 100x4 m^3.
+Escenario| Se evaluan interiores típicos: 
+
+
+
+
+
+una habitación, un aula, y un bar/restaurante. Tomando en consderación que la habitación tendrá un área de 40 m^2 y 3 m de altura, por lo cual su volumen será de 40x3 m^3. En el caso de un aula de clases su área sera 60 m^2 y su altura de 3 m, y el volumen sera de 60X3 m^3 y finalmente el área del bar/restaurante es de 100 m^2, con una altura de 4 m, teniendo así 100x4 m^3.
 Tipo de Mascarilla | Se consideran 2 tipos de mascarilla de los cuales obtenemos su eficiencia para realizar calculos posteriores. El primer tipo de mascarilla es la mascarilla quirúrgica la cual tiene una eficiencia de 0.65 para el momento en que la persona exhala al respirar o hablar y de 0.3  para el momento en que la persona inhala. Sumando estos dos valores obtenemos un resultado total de  eficiencia de 0.95. El segundo tipo de mascarilla es la de tela la cual tiene una eficiencia de 0.5  para el momento en que la persona exhala al respirar o hablar y de 0.2 para el momento en que la  persona inhala. Sumando estos dos valores obtenemos un resultado total de eficiencia de 0.7.
 Ventilación | Se consideran 2 tipos de ventilación de los cuales obtenemos el valor para la tasa de ventilación del escenario. Para cada uno de los tipo se estableció un rango de valores, al escoger  la opción deseada, el valor de la tasa de ventilación se obtendrá de manera aleatoria respetando los valores mínimos y máximos de dichos rangos. El primer tipo es la ventilación baja con un rango de [1,3] para el valor de la tasa. El segundo tipo es la ventilación alta con un rango de [4,9] para el valor de la tasa.
 Cantidad de personas | Para la cantidad de personas que se encuentran en el escenario se consideró un valor mínimo de 5 personas y máximo de 25 personas.

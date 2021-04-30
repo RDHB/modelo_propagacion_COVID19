@@ -37,9 +37,9 @@ Para que los pasos anteriores realicen la función deseada, se debe asegurar que
 
 ## Manejo del simulador
 ### Calculadora de probabilidad de contagio de COVID-19
-#### Variables de entrada
- A continuación, se describen las variables que constituyen la entrada para la Calculadora de Probabilidad de contagio de COVID-19.
+Constituye la primera parte del proyecto, en el cual se calculan las probabilidades de adquirir la enfermedad de COVID-19. Se toman en cuenta diferentes parámetros algunos de los cuales dependen de condiciones y decisiones propias. A continuación se muestran las diferentes variables para el uso del simulador y una descripción de las mismas. Las variables de entrada son las que pueden ser modificadas en la interfaz de usuario del simulador y con ello obtener valores diferentes para las variables de salida.
 
+#### Variables de entrada
 Variable  | Descripción
 --------- | ------------
 Escenario | Se evaluan interiores típicos: una habitación, un aula, y un bar/restaurante. Tomando en consderación que la habitación tendrá un área de 40 m^2 y 3 m de altura, por lo cual su volumen será de 40x3 m^3. En el caso de un aula de clases su área sera 60 m^2 y su altura de 3 m, y el volumen sera de 60X3 m^3 y finalmente el área del bar/restaurante es de 100 m^2, con una altura de 4 m, teniendo así 100x4 m^3.
@@ -48,63 +48,45 @@ Ventilación | Se consideran 2 tipos de ventilación de los cuales obtenemos el 
 Cantidad de personas | Para la cantidad de personas que se encuentran en el escenario se consideró un valor mínimo de 5 personas y máximo de 25 personas.
 Duración del evento | Para esta variable se consideró un mínimo de 1 hora y un máximo de 12 horas en las cuales las personas estarán reunidas en el escenario.
 
-### Variables de estado
-#### D50
-Determina la cantidad de copias virales de ARN. 
-#### Carga viralmente infecciosa 
-Determina la cantidad de copias de ARN que emite un sujeto infeccioso. 
-#### Diámetro de aerosol húmedo. 
-Diámetro de la partícula de aerosol que se encuentran en aire ambiente y son emitidas por personas. 
-#### Concentración por respirar
-Determina la concentración de partículas que la persona respirará. 
-#### Concentración de N° de partículas para hablar
-Determina la concentración de partículas producidas a partir del habla. 
-#### Concentración de N° de partículas para respirar
-Determina la concentración de partículas producidas a partir de la respiración.
-#### Frecuencia respiratoria 
-Determina el ritmo respiratorio de una persona cuando está en reposo o realiza una actividad ligera.
-#### Probabilidad de deposición en los pulmones 
-Determina la probabilidad de que el virus que permanece en el aerosol se deposite en los pulmones. 
-#### Vida útil del virus en aerosol 
-Determina el tiempo de vida del virus en el aerosol.
-#### Episodio infeccioso 
-Determina los dias de mayor infecciosidad del sujeto. 
+#### Variables de estado
+Variable  | Descripción
+--------- | ------------
+D50       | Determina la cantidad de copias virales de ARN. 
+Carga viralmente infecciosa | Determina la cantidad de copias de ARN que emite un sujeto infeccioso. 
+Diámetro de aerosol húmedo | Diámetro de la partícula de aerosol que se encuentran en aire ambiente y son emitidas por personas. 
+Concentración por respirar | Determina la concentración de partículas que la persona respirará. 
+Concentración de N° de partículas para hablar | Determina la concentración de partículas producidas a partir del habla. 
+Concentración de N° de partículas para respirar | Determina la concentración de partículas producidas a partir de la respiración.
+Frecuencia respiratoria | Determina el ritmo respiratorio de una persona cuando está en reposo o realiza una actividad ligera.
+Probabilidad de deposición en los pulmones | Determina la probabilidad de que el virus que permanece en el aerosol se deposite en los pulmones. 
+Vida útil del virus en aerosol | Determina el tiempo de vida del virus en el aerosol.
+Episodio infeccioso | Determina los dias de mayor infecciosidad del sujeto. 
 
-### Variables de salida
-#### Probabilidad de Infección 
-Determina el riesgo de infección de una sola copia de ARN viral.
-#### Contenido de ARN en aerosol
-Determina la  cantidad de  ARN viral que existe en el aerosol. 
-#### Emisión de aerosoles
-Determina la cantidad de emisión de aerosoles de una persona. 
-#### Concentración de aerosoles
-Determina cuanta cantidad de emisión de aerosoles de una persona se encuentra en un escenario específico. 
-#### ARN concentrado en aerosol
-Determina cantidad de ARN viral en la concentración de aerosoles. 
-#### Dosis de ARN por hora
-Determina la cantidad de ARN viral en la concentración de aerosol por una hora.
-#### Dosis de ARN por tiempo de duración del evento
-Determina la cantidad de ARN viral en la concentración de aerosol por un tiempo específico(tomando en cuenta la tasa de ventilación y la eficiencia de la mascarilla).
-#### Dosis de ARN por un episodio infeccioso
-Determina la dosis de ARN por tiempo de duración del evento, durante un episodio infeccioso.
-#### Riesgo de infección de una persona en el escenario 
-Determina el porcentaje del riesgo de que una persona en la habitación esté infectada.
-#### Riesgo que una persona en el escenario se infecte
-Determina el porcentaje de riesgo de que una persona en la habitación se infecte. 
+#### Variables de salida
+Variable  | Descripción
+--------- | ------------
+Probabilidad de Infección | Determina el riesgo de infección de una sola copia de ARN viral.
+Contenido de ARN en aerosol | Determina la  cantidad de  ARN viral que existe en el aerosol. 
+Emisión de aerosoles | Determina la cantidad de emisión de aerosoles de una persona. 
+Concentración de aerosoles | Determina cuanta cantidad de emisión de aerosoles de una persona se encuentra en un escenario específico. 
+ARN concentrado en aerosol | Determina cantidad de ARN viral en la concentración de aerosoles. 
+Dosis de ARN por hora | Determina la cantidad de ARN viral en la concentración de aerosol por una hora.
+Dosis de ARN por tiempo de duración del evento | Determina la cantidad de ARN viral en la concentración de aerosol por un tiempo específico(tomando en cuenta la tasa de ventilación y la eficiencia de la mascarilla).
+Dosis de ARN por un episodio infeccioso | Determina la dosis de ARN por tiempo de duración del evento, durante un episodio infeccioso.
+Riesgo de infección de una persona en el escenario | Determina el porcentaje del riesgo de que una persona en la habitación esté infectada.
+Riesgo que una persona en el escenario se infecte | Determina el porcentaje de riesgo de que una persona en la habitación se infecte. 
 
 ### Modelo SIR - Basado en agentes
 Esta parte del proyecto constituye la parte visual de la simulación donde se puede observar cómo se propaga el virus que causa el COVID-19 entre las personas que se encuentran en un ambiente cerrado. A continuación, se describen las variables que constituyen la entrada para la simulación visual y cómo se relaciona con la calculadora de probabilidad, cualquier cambio en estas últimas variables constituye un cambio automático en la simulación reconstruyéndose visualmente la simulación.
+
 #### Variables de entrada
-##### Cantidad de personas en el cuarto
-Determina la cantidad de agentes presentes en la simulación. Esta variable está definida con la calculadora de probabilidades. 
-##### Duración del evento
-Determina la cantidad de pasos que deben ser considerados en la simulación. Esta variable está definida con la calculadora de probabilidades y se declara en horas. Para la simulación cada paso dado constituye un minuto, por lo que se transforma esta variable multiplicando por el factor de 60.
-##### Riesgo que una persona en el escenario se infecte
-Determina la probabilidad que un agente dentro de la simulación salga infectado luego de una interacción dentro del ambiente cerrado. Esta variable está definida con la calculadora de probabilidades.
-#####  Cantidad de personas infectadas inicialmente
-Determina la cantidad de personas que se encuentran infectadas desde el inicio de la simulación. Para efecto del simulador esta variable siempre debe ser distinto de cero y menor que la cantidad de personas total en el ambiente cerrado, esta variable está definida para tener un valor dentro del rango de 1 a 4. 
-##### Distancia de interacción mínima segura
-Determina cuál es la distancia mínima permitida que asegura una interacción entre los agentes con probabilidad de transmisión. Esta variable puede tomar los valores 0.5, 1.0, 1.5 y 2.0 (en metros).
+Variable  | Descripción
+--------- | ------------
+Cantidad de personas en el cuarto | Determina la cantidad de agentes presentes en la simulación. Esta variable está definida con la calculadora de probabilidades. 
+Duración del evento | Determina la cantidad de pasos que deben ser considerados en la simulación. Esta variable está definida con la calculadora de probabilidades y se declara en horas. Para la simulación cada paso dado constituye un minuto, por lo que se transforma esta variable multiplicando por el factor de 60.
+Riesgo que una persona en el escenario se infecte | Determina la probabilidad que un agente dentro de la simulación salga infectado luego de una interacción dentro del ambiente cerrado. Esta variable está definida con la calculadora de probabilidades.
+Cantidad de personas infectadas inicialmente | Determina la cantidad de personas que se encuentran infectadas desde el inicio de la simulación. Para efecto del simulador esta variable siempre debe ser distinto de cero y menor que la cantidad de personas total en el ambiente cerrado, esta variable está definida para tener un valor dentro del rango de [1,4]. 
+Distancia de interacción mínima segura | Determina cuál es la distancia mínima permitida que asegura una interacción entre los agentes con probabilidad de transmisión. Esta variable puede tomar los valores [0.5, 1.0, 1.5 y 2.0] (en metros).
 
 #### Visualización del simulador
 * La interacción entre los agentes dentro del ambiente cerrado se visualiza en un gráfico, los agentes infectados se representan con un hexágono de color rojo y las personas suceptibles con un círculo de color gris. 

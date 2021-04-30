@@ -42,7 +42,7 @@ Para que los pasos anteriores realicen la función deseada, se debe asegurar que
 
 Variable | Descripción
 ---------  ------------
-Escenario| Se evaluan interiores típicos: 
+Escenario | Se evaluan interiores típicos: 
 
 
 

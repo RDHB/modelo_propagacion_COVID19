@@ -53,22 +53,22 @@ Para esta variable se consideró un mínimo de 1 hora y un máximo de 12 horas e
 
 ### Variables de estado
 #### D50
-Determina la cantidad de copías virales de ARN. 
+Determina la cantidad de copias virales de ARN. 
 #### Carga viralmente infecciosa 
 Determina la cantidad de copias de ARN que emite un sujeto infeccioso. 
-#### Diametro de aerosol humedo. 
-Diametro de la particula de aerosol que se encuentran en aire ambiente y son emitidas por personas. 
+#### Diámetro de aerosol húmedo. 
+Diámetro de la partícula de aerosol que se encuentran en aire ambiente y son emitidas por personas. 
 #### Concentración por respirar
-Determina la concentración de particulas que la persona respirara. 
-#### Concentracíon de N° de partículas para hablar
-Determina la concentración de particulas producidas a partir del habla. 
-#### Concentracíon de N° de partículas para respirar
-Determina la concentración de particulas producidas a partir de la respiración.
+Determina la concentración de partículas que la persona respirará. 
+#### Concentración de N° de partículas para hablar
+Determina la concentración de partículas producidas a partir del habla. 
+#### Concentración de N° de partículas para respirar
+Determina la concentración de partículas producidas a partir de la respiración.
 #### Frecuencia respiratoria 
-Determina el ritmo respiratorio de una persona cuando esta en reposo o realiza una actividad ligera.
+Determina el ritmo respiratorio de una persona cuando está en reposo o realiza una actividad ligera.
 #### Probabilidad de deposición en los pulmones 
 Determina la probabilidad de que el virus que permanece en el aerosol se deposite en los pulmones. 
-#### Vida útil del virus en areosol 
+#### Vida útil del virus en aerosol 
 Determina el tiempo de vida del virus en el aerosol.
 #### Episodio infeccioso 
 Determina los dias de mayor infecciosidad del sujeto. 
@@ -78,20 +78,20 @@ Determina los dias de mayor infecciosidad del sujeto.
 Determina el riesgo de infección de una sola copia de ARN viral.
 #### Contenido de ARN en aerosol
 Determina la  cantidad de  ARN viral que existe en el aerosol. 
-#### Emision de aerosoles
+#### Emisión de aerosoles
 Determina la cantidad de emisión de aerosoles de una persona. 
-#### Concentracion de aerosoles
-Determina cuanta cantidad de emisión de aerosoles de una persona se encuentra en un escenario especifico. 
+#### Concentración de aerosoles
+Determina cuanta cantidad de emisión de aerosoles de una persona se encuentra en un escenario específico. 
 #### ARN concentrado en aerosol
 Determina cantidad de ARN viral en la concentración de aerosoles. 
 #### Dosis de ARN por hora
 Determina la cantidad de ARN viral en la concentración de aerosol por una hora.
 #### Dosis de ARN por tiempo de duración del evento
-Determina la cantidad de ARN viral en la concentración de aerosol por un tiempo especifico(tomando en cuenta la tasa de ventilación y la eficiencia de la mascarilla).
+Determina la cantidad de ARN viral en la concentración de aerosol por un tiempo específico(tomando en cuenta la tasa de ventilación y la eficiencia de la mascarilla).
 #### Dosis de ARN por un episodio infeccioso
 Determina la dosis de ARN por tiempo de duración del evento, durante un episodio infeccioso.
 #### Riesgo de infección de una persona en el escenario 
-Determina el porcentaje del riesgo de que una persona en la habitación este infectada.
+Determina el porcentaje del riesgo de que una persona en la habitación esté infectada.
 #### Riesgo que una persona en el escenario se infecte
 Determina el porcentaje de riesgo de que una persona en la habitación se infecte. 
 
